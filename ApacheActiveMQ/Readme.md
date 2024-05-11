@@ -22,21 +22,6 @@ https://activemq.apache.org/components/artemis/documentation/latest/docker.html#
     vi ~/.zshrc
     alias start-activemq='cd /Users/rame/Documents/Work/Apache/activemq/apache-activemq-5.17.0/bin/ && ./activemq start'
     alias stop-activemq='cd /Users/rame/Documents/Work/Apache/activemq/apache-activemq-5.17.0/bin/ && ./activemq stop'
-
-
-    docker exec -it ubuntu bash
-    vi ~/.bashrc
+source ~/.bashrc
 
     
-    
-    
-    alias start-zookeeper='cd /usr/src/kafka/confluent-7.5.1/bin/ && ./zookeeper-server-start /usr/src/kafka/confluent-7.5.1/etc/kafka/zookeeper.properties'
-    alias start-broker='cd /usr/src/kafka/confluent-7.5.1/bin/ && ./kafka-server-start /usr/src/kafka/confluent-7.5.1/etc/kafka/server.properties'
-    alias start-producer-cricket='cd /usr/src/kafka/confluent-7.5.1/bin/ && ./kafka-console-producer --broker-list localhost:9092 --topic cricket'
-    alias start-consumer-cricket='cd /usr/src/kafka/confluent-7.5.1/bin/ && ./kafka-console-consumer --bootstrap-server localhost:9092 --topic cricket --from-beginning'
-
-    alias start-producer-customer-events='cd /usr/src/kafka/confluent-7.5.1/bin/ && ./kafka-console-producer --broker-list localhost:9092 --topic customer-events'
-    alias start-consumer-customer-events='cd /usr/src/kafka/confluent-7.5.1/bin/ && ./kafka-console-consumer --bootstrap-server localhost:9092 --topic customer-events --from-beginning'
-    
-    source ~/.bashrc
-
